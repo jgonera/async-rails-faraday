@@ -2,25 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-
-
-
-
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+gem 'thin', '~> 1.4.1'
+gem 'faraday', '~> 0.8.1'
+gem 'eventmachine', '>= 1.0.0.rc.4'
+gem 'rack-fiber_pool'
+gem 'em-http-request', '~> 1.0'
+gem 'em-synchrony', '~> 1.0'

@@ -22,5 +22,7 @@ AsyncRailsFaraday::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
-
+  # Instead of using threadsafe! (so that code reloading still works)
+  # Required to avoid "deadlock; recursive locking" when using fiber pool
+  config.allow_concurrency = true
 end
